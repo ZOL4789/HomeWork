@@ -26,6 +26,7 @@ main	lseek.c	/^int main(){$/;"	f	language:C
 main	main.c	/^int main(){$/;"	f	language:C
 main	open1.c	/^int main(){$/;"	f	language:C
 main	open2.c	/^int main(){$/;"	f	language:C
+main	print1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
 main	time.c	/^int main(){$/;"	f	language:C
 main	timedif.c	/^int main(){$/;"	f	language:C
 main	vfork.c	/^ int main(){$/;"	f	language:C

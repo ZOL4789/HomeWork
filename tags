@@ -19,6 +19,7 @@ fd	clone.c	/^int v,fd;$/;"	v	language:C
 foo	work2_1.c	/^void foo(){$/;"	f	language:C
 func	clone.c	/^int func(){$/;"	f	language:C
 main	a.c	/^int main(){$/;"	f	language:C
+main	aa.c	/^int main(){$/;"	f	language:C
 main	clone.c	/^int main(){$/;"	f	language:C
 main	copy1.c	/^int main(){$/;"	f	language:C
 main	fork.c	/^int main(){$/;"	f	language:C

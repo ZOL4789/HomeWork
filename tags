@@ -18,6 +18,7 @@ err_sys	ourhdr.c	/^void err_sys(char *n){$/;"	f	language:C	signature:(char *n)
 fd	clone.c	/^int v,fd;$/;"	v	language:C
 foo	work2_1.c	/^void foo(){$/;"	f	language:C
 func	clone.c	/^int func(){$/;"	f	language:C
+main	a.c	/^int main(){$/;"	f	language:C
 main	clone.c	/^int main(){$/;"	f	language:C
 main	copy1.c	/^int main(){$/;"	f	language:C
 main	fork.c	/^int main(){$/;"	f	language:C
@@ -33,8 +34,10 @@ main	vfork.c	/^ int main(){$/;"	f	language:C
 main	work2_1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
 main	work2_2.c	/^int main(){$/;"	f	language:C
 main	work2_3.c	/^int main(){$/;"	f	language:C
+maxNum	a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 operator	fun2.c	/^arg operator(int *a,int n){ 	\/\/count sum and avg of array and give them to a struct "k" and  return the struct "k"$/;"	f	language:C	signature:(int *a,int n)
 operator	uhead.h	/^arg operator(int *,int);	\/\/count sum and avg of array and return$/;"	v	language:C++
+randNum	a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 sum	uhead.h	/^	int sum;$/;"	m	language:C++	struct:arg
 urand	fun.c	/^int urand(int n){$/;"	f	language:C	signature:(int n)
 usum	fun.c	/^int usum(int *a, int n){	\/\/count sum of a array and return$/;"	f	language:C	signature:(int *a, int n)

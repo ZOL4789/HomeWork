@@ -4,11 +4,11 @@
 
 int main(){
 	int arr[100];
-	void *handle;
+	void  * handle;
 	void (*f1)();
 	void (*f2)();
 	char *error;
-	handle = dlopen("./liba.so","RTLD_LAZY");
+	handle = dlopen("./libaa.so",RTLD_LAZY);
 	if(!handle){
 		perror("load failed!\n");
 		exit(1);
@@ -22,7 +22,7 @@ int main(){
 		fprintf(stderr,"%s\n",error);
 		exit(1);
 	}
-	randNum(arr);
-	maxNum(arr);
+	f1(arr);
+	f2(arr);
 	return 0;
 }

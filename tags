@@ -4,48 +4,49 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-BUFFSIZE	copy1.c	3;"	d	language:C	file:
-FILE_MODE	ourhdr.h	5;"	d	language:C++
-_GNU_SOURCE	clone.c	1;"	d	language:C	file:
-arg	uhead.h	/^typedef struct arg{		\/\/a struct used return two number$/;"	s	language:C++
-arg	uhead.h	/^}arg;$/;"	t	language:C++	typeref:struct:arg
-avg	uhead.h	/^	float avg;$/;"	m	language:C++	struct:arg
-bar	work2_1.c	/^void bar(){$/;"	f	language:C
-bubbleSort	fun2.c	/^int* bubbleSort(int *a, int n){$/;"	f	language:C	signature:(int *a, int n)
-buf1	lseek.c	/^char buf1[] = "abcdefghij";$/;"	v	language:C
-buf2	lseek.c	/^char buf2[] = "ABCDEFGHIJ";$/;"	v	language:C
-err_sys	ourhdr.c	/^void err_sys(char *n){$/;"	f	language:C	signature:(char *n)
-fd	clone.c	/^int v,fd;$/;"	v	language:C
-foo	work2_1.c	/^void foo(){$/;"	f	language:C
-func	clone.c	/^int func(){$/;"	f	language:C
-main	a.c	/^int main(){$/;"	f	language:C
-main	aa.c	/^int main(){$/;"	f	language:C
-main	clone.c	/^int main(){$/;"	f	language:C
-main	copy1.c	/^int main(){$/;"	f	language:C
-main	fork.c	/^int main(){$/;"	f	language:C
-main	fun3.c	/^int main(){$/;"	f	language:C
-main	lseek.c	/^int main(){$/;"	f	language:C
-main	main.c	/^int main(){$/;"	f	language:C
-main	open1.c	/^int main(){$/;"	f	language:C
-main	open2.c	/^int main(){$/;"	f	language:C
-main	print1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
-main	time.c	/^int main(){$/;"	f	language:C
-main	timedif.c	/^int main(){$/;"	f	language:C
-main	vfork.c	/^ int main(){$/;"	f	language:C
+BUFFSIZE	week5before/copy1.c	3;"	d	language:C	file:
+FILE_MODE	week5before/ourhdr.h	5;"	d	language:C++
+_GNU_SOURCE	week5before/clone.c	1;"	d	language:C	file:
+arg	week5before/uhead.h	/^typedef struct arg{		\/\/a struct used return two number$/;"	s	language:C++
+arg	week5before/uhead.h	/^}arg;$/;"	t	language:C++	typeref:struct:arg
+avg	week5before/uhead.h	/^	float avg;$/;"	m	language:C++	struct:arg
+bar	week5before/work2_1.c	/^void bar(){$/;"	f	language:C
+bubbleSort	week5before/fun2.c	/^int* bubbleSort(int *a, int n){$/;"	f	language:C	signature:(int *a, int n)
+buf1	week5before/lseek.c	/^char buf1[] = "abcdefghij";$/;"	v	language:C
+buf2	week5before/lseek.c	/^char buf2[] = "ABCDEFGHIJ";$/;"	v	language:C
+err_sys	week5before/ourhdr.c	/^void err_sys(char *n){$/;"	f	language:C	signature:(char *n)
+fd	week5before/clone.c	/^int v,fd;$/;"	v	language:C
+foo	week5before/work2_1.c	/^void foo(){$/;"	f	language:C
+func	week5before/clone.c	/^int func(){$/;"	f	language:C
 main	week5/a.c	/^int main(){$/;"	f	language:C
+main	week5before/a.c	/^int main(){$/;"	f	language:C
+main	week5before/aa.c	/^int main(){$/;"	f	language:C
+main	week5before/clone.c	/^int main(){$/;"	f	language:C
+main	week5before/copy1.c	/^int main(){$/;"	f	language:C
+main	week5before/fork.c	/^int main(){$/;"	f	language:C
+main	week5before/fun3.c	/^int main(){$/;"	f	language:C
+main	week5before/lseek.c	/^int main(){$/;"	f	language:C
+main	week5before/main.c	/^int main(){$/;"	f	language:C
+main	week5before/open1.c	/^int main(){$/;"	f	language:C
+main	week5before/open2.c	/^int main(){$/;"	f	language:C
+main	week5before/print1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
+main	week5before/time.c	/^int main(){$/;"	f	language:C
+main	week5before/timedif.c	/^int main(){$/;"	f	language:C
+main	week5before/vfork.c	/^ int main(){$/;"	f	language:C
+main	week5before/work2_1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
+main	week5before/work2_2.c	/^int main(){$/;"	f	language:C
+main	week5before/work2_3.c	/^int main(){$/;"	f	language:C
 main	week6/aa.c	/^int main(){$/;"	f	language:C
-main	work2_1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
-main	work2_2.c	/^int main(){$/;"	f	language:C
-main	work2_3.c	/^int main(){$/;"	f	language:C
-maxNum	a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
+main	week6/rbtest/aa.c	/^int main(){$/;"	f	language:C
 maxNum	week5/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
+maxNum	week5before/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 maxNum	week6/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-operator	fun2.c	/^arg operator(int *a,int n){ 	\/\/count sum and avg of array and give them to a struct "k" and  return the struct "k"$/;"	f	language:C	signature:(int *a,int n)
-operator	uhead.h	/^arg operator(int *,int);	\/\/count sum and avg of array and return$/;"	v	language:C++
-randNum	a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
+operator	week5before/fun2.c	/^arg operator(int *a,int n){ 	\/\/count sum and avg of array and give them to a struct "k" and  return the struct "k"$/;"	f	language:C	signature:(int *a,int n)
+operator	week5before/uhead.h	/^arg operator(int *,int);	\/\/count sum and avg of array and return$/;"	v	language:C++
 randNum	week5/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
+randNum	week5before/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 randNum	week6/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-sum	uhead.h	/^	int sum;$/;"	m	language:C++	struct:arg
-urand	fun.c	/^int urand(int n){$/;"	f	language:C	signature:(int n)
-usum	fun.c	/^int usum(int *a, int n){	\/\/count sum of a array and return$/;"	f	language:C	signature:(int *a, int n)
-v	clone.c	/^int v,fd;$/;"	v	language:C
+sum	week5before/uhead.h	/^	int sum;$/;"	m	language:C++	struct:arg
+urand	week5before/fun.c	/^int urand(int n){$/;"	f	language:C	signature:(int n)
+usum	week5before/fun.c	/^int usum(int *a, int n){	\/\/count sum of a array and return$/;"	f	language:C	signature:(int *a, int n)
+v	week5before/clone.c	/^int v,fd;$/;"	v	language:C

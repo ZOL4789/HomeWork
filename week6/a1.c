@@ -8,6 +8,7 @@ void randNum(int *arr){
 		printf("%d \t", arr[i]);
 		if((i+1)%10 == 0){
 			printf("\n");
+//#include you are so fool;
 		}
 	}
 }

@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 BUFFSIZE	week5before/code/copy1.c	3;"	d	language:C	file:
 FILE_MODE	week5before/code/ourhdr.h	5;"	d	language:C++
+N	week7/code/file.h	3;"	d	language:C++
 SIZE	week7/code/buftest1.c	5;"	d	language:C	file:
 _GNU_SOURCE	week5before/code/clone.c	1;"	d	language:C	file:
 arg	week5before/code/uhead.h	/^typedef struct arg{		\/\/a struct used return two number$/;"	s	language:C++
@@ -53,11 +54,11 @@ operator	week5before/code/uhead.h	/^arg operator(int *,int);	\/\/count sum and a
 randNum	week5/code/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 randNum	week5before/code/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 randNum	week6/code/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-readAuth	week7/code/file.c	/^void readAuth(){}$/;"	f	language:C
-readFile	week7/code/file.c	/^void readFile(){}$/;"	f	language:C
+readAuth	week7/code/file.c	/^void readAuth(){$/;"	f	language:C
+readFile	week7/code/file.c	/^void readFile(){$/;"	f	language:C
 sum	week5before/code/uhead.h	/^	int sum;$/;"	m	language:C++	struct:arg
-updateAuth	week7/code/file.c	/^void updateAuth(){}$/;"	f	language:C
+updateAuth	week7/code/file.c	/^void updateAuth(){$/;"	f	language:C
 urand	week5before/code/fun.c	/^int urand(int n){$/;"	f	language:C	signature:(int n)
 usum	week5before/code/fun.c	/^int usum(int *a, int n){	\/\/count sum of a array and return$/;"	f	language:C	signature:(int *a, int n)
 v	week5before/code/clone.c	/^int v,fd;$/;"	v	language:C
-writeFile	week7/code/file.c	/^void writeFile(){}$/;"	f	language:C
+writeFile	week7/code/file.c	/^void writeFile(){$/;"	f	language:C

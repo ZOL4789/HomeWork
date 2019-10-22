@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
-int menu();
-void newFile();
-void writeFile();
-void readFile();
-void updateAuth();
-void readAuth();
+#include "file.h"
+
 int main(){
 	int choice;
 	while(1){
 		choice = menu();
+		system("clear");
 		switch(choice){
 			case 1:
 				newFile();
@@ -48,7 +47,7 @@ int menu(){
 	printf("Please input your choice(0-6):");
 	scanf("%d", &num);
 	printf("%d\n",num);
-	sleep(5000);
+	//sleep(5000);
 	while(num>=0 && num <=5){
 		return num;
 	}
@@ -57,17 +56,144 @@ int menu(){
 
 //create new file
 void newFile(){
-
+	FILE *fp;
+	char name[N];
+	printf("Please input file name: ");
+	scanf("%s",name);
+	if(fopen(name, "r") == NULL){
+		if((fp = fopen(name, "w+")) == NULL){	
+			printf("create failed!\n");
+			return;
+		}else {
+			printf("create success!\n");
+		}
+		fclose(fp);
+	}
 }
 
 //write file
-void writeFile(){}
+void writeFile(){
+	FILE *fp;
+	int i = 0;
+	char name[N], buf[N];
+	printf("Please input name of file to write: ");
+	scanf("%s", name);
+	if((fp = fopen(name, "r")) == NULL){
+		printf("open failed!\n");
+		return;
+	}else {	
+		fclose(fp);
+		if((fp = fopen(name,"a+")) == NULL){
+			printf("Open failed!\n");
+			return;
+		}
+		getchar();
+		printf("Please input char to write: ");	
+		while((buf[i] = getchar()) != '\n'){
+			i++;
+		}
+		fwrite(buf,i, 1,fp);
+		fclose(fp);
+	}
+}
 
 //read file
-void readFile(){}
+void readFile(){
+	FILE *fp;
+	char buf[N], name[N];
+	printf("Please input name of file to read: ");
+	scanf("%s", name);
+	if((fp = fopen(name, "r")) == NULL){
+		printf("Open failed!\n");
+		return;
+	}else {	
+		fclose(fp);
+		if((fp = fopen(name,"r")) == NULL){
+			printf("Open failed!\n");
+			return;
+		}
+		fread(buf,sizeof(buf), 1,fp);
+		fclose(fp);
+	}
+	printf("%s\n",buf);	
+}
 
 //update file's authority
-void updateAuth(){}
+void updateAuth(){
+	char name[N];
+	int num;
+	printf("Please input name of file to update authority: ");
+	scanf("%s", name);
+	if(access(name,R_OK) < 0){
+		printf("open failed!\n");
+		return;
+	}
+	printf("1.read_only\n2.write_only\n3.read_write\nPlease input your choice:");
+	scanf("%d", &num);
+	switch(num){
+		case 1:
+			if(chmod(name, S_IRUSR) < 0){
+				fprintf(stdin, "%s", stderr);
+				return;				
+			}
+			break;
+		case 2:
+			if(chmod(name, S_IWUSR) < 0){
+				fprintf(stdin, "%s",stderr);
+				return;				
+			}			
+			break;
+		case 3:
+			if(chmod(name, S_IRWXU) < 0){
+				fprintf(stdin, "%s", stderr);
+				return;				
+			}
+			break;
+		default:
+			break;
+	}
+	
+}
 
 //read file's authority
-void readAuth(){}
+void readAuth(){
+	char name[N];
+	struct stat statbuf;
+	char str[11];
+	mode_t mode;
+	printf("Please input name of file to read authority: ");
+	scanf("%s", name);
+	if(access(name,R_OK) < 0){
+		printf("open failed!\n");
+		return;
+	}
+	if(stat(name, &statbuf) < 0){
+		fprintf(stdin, "%s", stderr);
+		return;
+	}
+	mode = statbuf.st_mode;
+	str[0]='-'; 
+	if(S_ISDIR(mode)) str[0]='d';
+	else if(S_ISCHR(mode)) str[0]='c';
+	else if(S_ISBLK(mode)) str[0]='b';
+	if(mode & S_IRUSR) str[1]='r';
+	else str[1]='-';
+	if(mode & S_IWUSR) str[2]='w';
+	else str[2]='-';
+	if(mode & S_IXUSR) str[3]='x';
+	else str[3]='-';
+	if(mode & S_IRGRP) str[4]='r';
+	else str[4]='-';
+	if(mode & S_IWGRP) str[5]='w';
+	else str[5]='-';
+	if(mode & S_IXGRP) str[6]='x';
+	else str[6]='-';
+	if(mode & S_IROTH) str[7]='r';
+	else str[7]='-';
+	if(mode & S_IWOTH) str[8]='w';
+	else str[8]='-';
+	if(mode & S_IXOTH) str[9]='x';
+	else str[9]='-';
+	str[10]='\0';
+	printf("Mode:%s\n",str);
+}

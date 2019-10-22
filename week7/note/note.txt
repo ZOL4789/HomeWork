@@ -1,0 +1,4 @@
+buftest1.c:
+	测试缓冲区
+buftest2.c:
+	测试fork（）

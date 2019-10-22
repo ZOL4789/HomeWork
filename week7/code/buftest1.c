@@ -10,7 +10,7 @@ int main(){
 		perror("将标准输入的缓冲类型设为无缓冲失败！\n");		//如果设置失败
 		return 1;
 	}
-	printf("将标准输入的缓冲类型设为无缓冲失败成功！\n");
+	printf("将标准输入的缓冲类型设为无缓冲成功！\n");
 	printf("stdin类型为："); 		//打印缓冲区信息
 	if(stdin->_flags & _IO_UNBUFFERED){	//判断标准输入流对象的缓冲类型
 		printf("无缓冲！\n");

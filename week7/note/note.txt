@@ -2,3 +2,5 @@ buftest1.c:
 	测试缓冲区
 buftest2.c:
 	测试fork（）
+file.c:
+	测试标准输入和输出，以及对文件的权限进行操作。

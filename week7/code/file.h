@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 100
+#define NI 1024
+#define N 1048576
 int menu();
 void newFile();
 void writeFile();

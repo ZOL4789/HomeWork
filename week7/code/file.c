@@ -46,8 +46,6 @@ int menu(){
 	printf("0.退出\n");
 	printf("Please input your choice(0-6):");
 	scanf("%d", &num);
-	printf("%d\n",num);
-	//sleep(5000);
 	while(num>=0 && num <=5){
 		return num;
 	}
@@ -57,7 +55,7 @@ int menu(){
 //create new file
 void newFile(){
 	FILE *fp;
-	char name[N];
+	char name[NI];
 	printf("Please input file name: ");
 	scanf("%s",name);
 	if(fopen(name, "r") == NULL){
@@ -68,6 +66,8 @@ void newFile(){
 			printf("create success!\n");
 		}
 		fclose(fp);
+	}else {
+		printf("File exits!\n");
 	}
 }
 
@@ -75,11 +75,11 @@ void newFile(){
 void writeFile(){
 	FILE *fp;
 	int i = 0;
-	char name[N], buf[N];
+	char name[NI], buf[N];
 	printf("Please input name of file to write: ");
 	scanf("%s", name);
 	if((fp = fopen(name, "r")) == NULL){
-		printf("open failed!\n");
+		printf("no such file!\n");
 		return;
 	}else {	
 		fclose(fp);
@@ -88,10 +88,11 @@ void writeFile(){
 			return;
 		}
 		getchar();
-		printf("Please input char to write: ");	
+		printf("Please input something to write: ");	
 		while((buf[i] = getchar()) != '\n'){
 			i++;
 		}
+		printf("%s\n",buf);
 		fwrite(buf,i, 1,fp);
 		fclose(fp);
 	}
@@ -100,11 +101,14 @@ void writeFile(){
 //read file
 void readFile(){
 	FILE *fp;
-	char buf[N], name[N];
+	char buf[N]="", name[NI]="", temp;
+	int i = 0;
 	printf("Please input name of file to read: ");
 	scanf("%s", name);
+	printf("%s\n", buf);
+	printf("%s\n", name);
 	if((fp = fopen(name, "r")) == NULL){
-		printf("Open failed!\n");
+		printf("no such file!\n");
 		return;
 	}else {	
 		fclose(fp);
@@ -112,20 +116,24 @@ void readFile(){
 			printf("Open failed!\n");
 			return;
 		}
-		fread(buf,sizeof(buf), 1,fp);
+		while((temp = getc(fp)) != EOF){
+			buf[i] = temp;
+			i++;
+		}
 		fclose(fp);
 	}
-	printf("%s\n",buf);	
+	printf("%s\n",buf);
+	fflush(stdin);	
 }
 
 //update file's authority
 void updateAuth(){
-	char name[N];
+	char name[NI];
 	int num;
 	printf("Please input name of file to update authority: ");
 	scanf("%s", name);
 	if(access(name,R_OK) < 0){
-		printf("open failed!\n");
+		printf("no such file\n");
 		return;
 	}
 	printf("1.read_only\n2.write_only\n3.read_write\nPlease input your choice:");
@@ -157,7 +165,7 @@ void updateAuth(){
 
 //read file's authority
 void readAuth(){
-	char name[N];
+	char name[NI];
 	struct stat statbuf;
 	char str[11];
 	mode_t mode;

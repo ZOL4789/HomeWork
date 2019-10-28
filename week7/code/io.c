@@ -1,6 +1,5 @@
 #include "io.h"
-
-int main(){
+void show(){
 	int choice;
 	while(1){
 		choice = menu();
@@ -26,8 +25,7 @@ int main(){
 			default:
 				printf("no such choice\n");		
 		}
-	}	
-	return 0;
+	}
 }
 
 int menu(){
@@ -78,7 +76,7 @@ void writeFile(){
 	}else {	
 		fclose(fp);
 		if((fp = fopen(name,"a+")) == NULL){
-			printf("Open failed!\n");
+			printf("Open failed!\n");	
 			return;
 		}
 		getchar();
@@ -156,7 +154,7 @@ void updateAuth(){
 	}
 	
 }
-
+	
 //read file's authority
 void readAuth(){
 	char name[NI];

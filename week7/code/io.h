@@ -1,3 +1,6 @@
+#include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define NI 1024
@@ -8,6 +11,3 @@ void writeFile();
 void readFile();
 void updateAuth();
 void readAuth();
-
-
-

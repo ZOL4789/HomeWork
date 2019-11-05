@@ -4,6 +4,9 @@
 static void __attribute__ ((constructor)) before_main(void){
 	printf("Running before main!\n");
 }
+static void __attribute__ ((destructor)) after_main(void){
+	printf("~Destroy()\n");
+}
 static void callback1(){
 	printf("1:Running after main!\n");
 }

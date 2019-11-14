@@ -11,18 +11,29 @@ NI	week7/code/io.h	6;"	d	language:C++
 SIZE	week7/code/buftest1.c	5;"	d	language:C	file:
 _GNU_SOURCE	beforeweek5/code/clone.c	1;"	d	language:C	file:
 a	week8/code/pra2.c	/^int a;$/;"	v	language:C
+after_main	week9/code/test.c	/^static void __attribute__ ((destructor)) after_main(void){$/;"	f	language:C	file:	signature:(void)
 arg	beforeweek5/code/uhead.h	/^typedef struct arg{		\/\/a struct used return two number$/;"	s	language:C++
 arg	beforeweek5/code/uhead.h	/^}arg;$/;"	t	language:C++	typeref:struct:arg
 avg	beforeweek5/code/uhead.h	/^	float avg;$/;"	m	language:C++	struct:arg
 b	week8/code/pra2.c	/^static int b = 10;$/;"	v	language:C	file:
 bar	beforeweek5/code/work2_1.c	/^void bar(){$/;"	f	language:C
+before_main	week9/code/test.c	/^static void __attribute__ ((constructor)) before_main(void){$/;"	f	language:C	file:	signature:(void)
 bubbleSort	beforeweek5/code/fun2.c	/^int* bubbleSort(int *a, int n){$/;"	f	language:C	signature:(int *a, int n)
 buf1	beforeweek5/code/lseek.c	/^char buf1[] = "abcdefghij";$/;"	v	language:C
 buf2	beforeweek5/code/lseek.c	/^char buf2[] = "ABCDEFGHIJ";$/;"	v	language:C
+callback1	week9/code/test.c	/^static void callback1(){$/;"	f	language:C	file:
+callback2	week9/code/test.c	/^static void callback2(){$/;"	f	language:C	file:
+callback3	week9/code/test.c	/^static void callback3(){$/;"	f	language:C	file:
 err_sys	beforeweek5/code/ourhdr.c	/^void err_sys(char *n){$/;"	f	language:C	signature:(char *n)
 fd	beforeweek5/code/clone.c	/^int v,fd;$/;"	v	language:C
 foo	beforeweek5/code/work2_1.c	/^void foo(){$/;"	f	language:C
+fun1	week9/code/jumptest.c	/^static void fun1(){$/;"	f	language:C	file:
+fun1	week9/code/jumptest2.c	/^static void fun1(int *a, int *b, int *c){$/;"	f	language:C	file:	signature:(int *a, int *b, int *c)
+fun2	week9/code/jumptest.c	/^static void fun2(){$/;"	f	language:C	file:
 func	beforeweek5/code/clone.c	/^int func(){$/;"	f	language:C
+g_stack_env	week9/code/jumptest.c	/^static jmp_buf g_stack_env;$/;"	v	language:C	file:
+g_stack_env	week9/code/jumptest2.c	/^static jmp_buf g_stack_env;$/;"	v	language:C	file:
+gg	week9/code/fork1.c	/^int gg = 9;$/;"	v	language:C
 global	week7/code/buftest2.c	/^     int global = 4;$/;"	v	language:C
 main	beforeweek5/code/a.c	/^int main(){$/;"	f	language:C
 main	beforeweek5/code/aa.c	/^int main(){$/;"	f	language:C
@@ -51,9 +62,24 @@ main	week7/code/filedl.c	/^int main(){$/;"	f	language:C
 main	week8/code/main1.c	/^int main(int argc, char *argv[], char *env[]){$/;"	f	language:C	signature:(int argc, char *argv[], char *env[])
 main	week8/code/pra1.c	/^int main(){$/;"	f	language:C
 main	week8/code/pra2.c	/^int main(int argc, char *argv[], char *envp[]){$/;"	f	language:C	signature:(int argc, char *argv[], char *envp[])
+main	week8/code/pra3.c	/^int main(){$/;"	f	language:C
+main	week8/code/pra4.c	/^int main(){$/;"	f	language:C
+main	week8/code/pra5.c	/^int main(){$/;"	f	language:C
+main	week9/code/fork1.c	/^int main(){$/;"	f	language:C
+main	week9/code/jumptest.c	/^int main(){$/;"	f	language:C
+main	week9/code/jumptest2.c	/^int main(){$/;"	f	language:C
+main	week9/code/memtest.c	/^int main(){$/;"	f	language:C
+main	week9/code/test.c	/^int main(){$/;"	f	language:C
+main	week9/code/test1.c	/^int main(int argc, char *argv[], char *engv[]){$/;"	f	language:C	signature:(int argc, char *argv[], char *engv[])
 maxNum	beforeweek5/code/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 maxNum	week5/code/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
 maxNum	week6/code/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
+mem_double_free	week9/code/memtest.c	/^static void mem_double_free(){$/;"	f	language:C	file:
+mem_free_wild_pointer	week9/code/memtest.c	/^static void mem_free_wild_pointer(){$/;"	f	language:C	file:
+mem_leak1	week9/code/memtest.c	/^static void mem_leak1(){$/;"	f	language:C	file:
+mem_leak2	week9/code/memtest.c	/^static void mem_leak2(){$/;"	f	language:C	file:
+mem_overrun1	week9/code/memtest.c	/^static void mem_overrun1(){$/;"	f	language:C	file:
+mem_overrun2	week9/code/memtest.c	/^static void mem_overrun2(){$/;"	f	language:C	file:
 menu	week7/code/file.c	/^int menu(){$/;"	f	language:C
 menu	week7/code/filedl.c	/^int menu(){$/;"	f	language:C
 menu	week7/code/io.c	/^int menu(){$/;"	f	language:C
@@ -73,6 +99,7 @@ readFile	week7/code/file.c	/^void readFile(){$/;"	f	language:C
 readFile	week7/code/filedl.c	/^void readFile(){$/;"	f	language:C
 readFile	week7/code/io.c	/^void readFile(){$/;"	f	language:C
 show	week7/code/io.c	/^void show(){$/;"	f	language:C
+sub	week8/code/pra5.c	/^int sub(int a, int b, int c){$/;"	f	language:C	signature:(int a, int b, int c)
 sum	beforeweek5/code/uhead.h	/^	int sum;$/;"	m	language:C++	struct:arg
 updateAuth	week7/code/file.c	/^void updateAuth(){$/;"	f	language:C
 updateAuth	week7/code/filedl.c	/^void updateAuth(){$/;"	f	language:C
@@ -83,3 +110,4 @@ v	beforeweek5/code/clone.c	/^int v,fd;$/;"	v	language:C
 writeFile	week7/code/file.c	/^void writeFile(){$/;"	f	language:C
 writeFile	week7/code/filedl.c	/^void writeFile(){$/;"	f	language:C
 writeFile	week7/code/io.c	/^void writeFile(){$/;"	f	language:C
+x	week9/code/test1.c	/^int x = 100;$/;"	v	language:C

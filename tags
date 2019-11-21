@@ -4,110 +4,135 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-BUFFSIZE	beforeweek5/code/copy1.c	3;"	d	language:C	file:
-FILE_MODE	beforeweek5/code/ourhdr.h	5;"	d	language:C++
-N	week7/code/io.h	7;"	d	language:C++
-NI	week7/code/io.h	6;"	d	language:C++
-SIZE	week7/code/buftest1.c	5;"	d	language:C	file:
-_GNU_SOURCE	beforeweek5/code/clone.c	1;"	d	language:C	file:
-a	week8/code/pra2.c	/^int a;$/;"	v	language:C
-after_main	week9/code/test.c	/^static void __attribute__ ((destructor)) after_main(void){$/;"	f	language:C	file:	signature:(void)
-arg	beforeweek5/code/uhead.h	/^typedef struct arg{		\/\/a struct used return two number$/;"	s	language:C++
-arg	beforeweek5/code/uhead.h	/^}arg;$/;"	t	language:C++	typeref:struct:arg
-avg	beforeweek5/code/uhead.h	/^	float avg;$/;"	m	language:C++	struct:arg
-b	week8/code/pra2.c	/^static int b = 10;$/;"	v	language:C	file:
-bar	beforeweek5/code/work2_1.c	/^void bar(){$/;"	f	language:C
-before_main	week9/code/test.c	/^static void __attribute__ ((constructor)) before_main(void){$/;"	f	language:C	file:	signature:(void)
-bubbleSort	beforeweek5/code/fun2.c	/^int* bubbleSort(int *a, int n){$/;"	f	language:C	signature:(int *a, int n)
-buf1	beforeweek5/code/lseek.c	/^char buf1[] = "abcdefghij";$/;"	v	language:C
-buf2	beforeweek5/code/lseek.c	/^char buf2[] = "ABCDEFGHIJ";$/;"	v	language:C
-callback1	week9/code/test.c	/^static void callback1(){$/;"	f	language:C	file:
-callback2	week9/code/test.c	/^static void callback2(){$/;"	f	language:C	file:
-callback3	week9/code/test.c	/^static void callback3(){$/;"	f	language:C	file:
-err_sys	beforeweek5/code/ourhdr.c	/^void err_sys(char *n){$/;"	f	language:C	signature:(char *n)
-fd	beforeweek5/code/clone.c	/^int v,fd;$/;"	v	language:C
-foo	beforeweek5/code/work2_1.c	/^void foo(){$/;"	f	language:C
-fun1	week9/code/jumptest.c	/^static void fun1(){$/;"	f	language:C	file:
-fun1	week9/code/jumptest2.c	/^static void fun1(int *a, int *b, int *c){$/;"	f	language:C	file:	signature:(int *a, int *b, int *c)
-fun2	week9/code/jumptest.c	/^static void fun2(){$/;"	f	language:C	file:
-func	beforeweek5/code/clone.c	/^int func(){$/;"	f	language:C
-g_stack_env	week9/code/jumptest.c	/^static jmp_buf g_stack_env;$/;"	v	language:C	file:
-g_stack_env	week9/code/jumptest2.c	/^static jmp_buf g_stack_env;$/;"	v	language:C	file:
-gg	week9/code/fork1.c	/^int gg = 9;$/;"	v	language:C
-global	week7/code/buftest2.c	/^     int global = 4;$/;"	v	language:C
-main	beforeweek5/code/a.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/aa.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/clone.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/copy1.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/fork.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/fun3.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/lseek.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/main.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/open1.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/open2.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/print1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
-main	beforeweek5/code/time.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/timedif.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/vfork.c	/^ int main(){$/;"	f	language:C
-main	beforeweek5/code/work2_1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	signature:(int argc, char *argv[])
-main	beforeweek5/code/work2_2.c	/^int main(){$/;"	f	language:C
-main	beforeweek5/code/work2_3.c	/^int main(){$/;"	f	language:C
-main	week5/code/a.c	/^int main(){$/;"	f	language:C
-main	week6/code/aa.c	/^int main(){$/;"	f	language:C
-main	week6/code/rbtest/aa.c	/^int main(){$/;"	f	language:C
-main	week7/code/buftest1.c	/^int main(){$/;"	f	language:C
-main	week7/code/buftest2.c	/^     int main(){$/;"	f	language:C
-main	week7/code/file.c	/^int main(){$/;"	f	language:C
-main	week7/code/filedl.c	/^int main(){$/;"	f	language:C
-main	week8/code/main1.c	/^int main(int argc, char *argv[], char *env[]){$/;"	f	language:C	signature:(int argc, char *argv[], char *env[])
-main	week8/code/pra1.c	/^int main(){$/;"	f	language:C
-main	week8/code/pra2.c	/^int main(int argc, char *argv[], char *envp[]){$/;"	f	language:C	signature:(int argc, char *argv[], char *envp[])
-main	week8/code/pra3.c	/^int main(){$/;"	f	language:C
-main	week8/code/pra4.c	/^int main(){$/;"	f	language:C
-main	week8/code/pra5.c	/^int main(){$/;"	f	language:C
-main	week9/code/fork1.c	/^int main(){$/;"	f	language:C
-main	week9/code/jumptest.c	/^int main(){$/;"	f	language:C
-main	week9/code/jumptest2.c	/^int main(){$/;"	f	language:C
-main	week9/code/memtest.c	/^int main(){$/;"	f	language:C
-main	week9/code/test.c	/^int main(){$/;"	f	language:C
-main	week9/code/test1.c	/^int main(int argc, char *argv[], char *engv[]){$/;"	f	language:C	signature:(int argc, char *argv[], char *engv[])
-maxNum	beforeweek5/code/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-maxNum	week5/code/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-maxNum	week6/code/a2.c	/^void maxNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-mem_double_free	week9/code/memtest.c	/^static void mem_double_free(){$/;"	f	language:C	file:
-mem_free_wild_pointer	week9/code/memtest.c	/^static void mem_free_wild_pointer(){$/;"	f	language:C	file:
-mem_leak1	week9/code/memtest.c	/^static void mem_leak1(){$/;"	f	language:C	file:
-mem_leak2	week9/code/memtest.c	/^static void mem_leak2(){$/;"	f	language:C	file:
-mem_overrun1	week9/code/memtest.c	/^static void mem_overrun1(){$/;"	f	language:C	file:
-mem_overrun2	week9/code/memtest.c	/^static void mem_overrun2(){$/;"	f	language:C	file:
-menu	week7/code/file.c	/^int menu(){$/;"	f	language:C
-menu	week7/code/filedl.c	/^int menu(){$/;"	f	language:C
-menu	week7/code/io.c	/^int menu(){$/;"	f	language:C
-newFile	week7/code/file.c	/^void newFile(){$/;"	f	language:C
-newFile	week7/code/filedl.c	/^void newFile(){$/;"	f	language:C
-newFile	week7/code/io.c	/^void newFile(){$/;"	f	language:C
-operator	beforeweek5/code/fun2.c	/^arg operator(int *a,int n){ 	\/\/count sum and avg of array and give them to a struct "k" and  return the struct "k"$/;"	f	language:C	signature:(int *a,int n)
-operator	beforeweek5/code/uhead.h	/^arg operator(int *,int);	\/\/count sum and avg of array and return$/;"	v	language:C++
-print	week8/code/pra1.c	/^void print(char *str, int p){$/;"	f	language:C	signature:(char *str, int p)
-randNum	beforeweek5/code/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-randNum	week5/code/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-randNum	week6/code/a1.c	/^void randNum(int *arr){$/;"	f	language:C	signature:(int *arr)
-readAuth	week7/code/file.c	/^void readAuth(){$/;"	f	language:C
-readAuth	week7/code/filedl.c	/^void readAuth(){$/;"	f	language:C
-readAuth	week7/code/io.c	/^void readAuth(){$/;"	f	language:C
-readFile	week7/code/file.c	/^void readFile(){$/;"	f	language:C
-readFile	week7/code/filedl.c	/^void readFile(){$/;"	f	language:C
-readFile	week7/code/io.c	/^void readFile(){$/;"	f	language:C
-show	week7/code/io.c	/^void show(){$/;"	f	language:C
-sub	week8/code/pra5.c	/^int sub(int a, int b, int c){$/;"	f	language:C	signature:(int a, int b, int c)
-sum	beforeweek5/code/uhead.h	/^	int sum;$/;"	m	language:C++	struct:arg
-updateAuth	week7/code/file.c	/^void updateAuth(){$/;"	f	language:C
-updateAuth	week7/code/filedl.c	/^void updateAuth(){$/;"	f	language:C
-updateAuth	week7/code/io.c	/^void updateAuth(){$/;"	f	language:C
-urand	beforeweek5/code/fun.c	/^int urand(int n){$/;"	f	language:C	signature:(int n)
-usum	beforeweek5/code/fun.c	/^int usum(int *a, int n){	\/\/count sum of a array and return$/;"	f	language:C	signature:(int *a, int n)
-v	beforeweek5/code/clone.c	/^int v,fd;$/;"	v	language:C
-writeFile	week7/code/file.c	/^void writeFile(){$/;"	f	language:C
-writeFile	week7/code/filedl.c	/^void writeFile(){$/;"	f	language:C
-writeFile	week7/code/io.c	/^void writeFile(){$/;"	f	language:C
-x	week9/code/test1.c	/^int x = 100;$/;"	v	language:C
+BUFFSIZE	beforeweek5/code/copy1.c	3;"	d	file:
+FILE_MODE	beforeweek5/code/ourhdr.h	5;"	d
+N	week11/code/share.c	7;"	d	file:
+N	week7/code/io.h	7;"	d
+NI	week7/code/io.h	6;"	d
+SIZE	week7/code/buftest1.c	5;"	d	file:
+_GNU_SOURCE	beforeweek5/code/clone.c	1;"	d	file:
+a	week10/code/pro1.c	/^char a[10] = {0};$/;"	v
+a	week8/code/pra2.c	/^int a;$/;"	v
+after_main	week10/code/1-2.c	/^static void __attribute__ ((destructor)) after_main(){$/;"	f	file:
+after_main	week9/code/test.c	/^static void __attribute__ ((destructor)) after_main(void){$/;"	f	file:
+arg	beforeweek5/code/uhead.h	/^typedef struct arg{		\/\/a struct used return two number$/;"	s
+arg	beforeweek5/code/uhead.h	/^}arg;$/;"	t	typeref:struct:arg
+avg	beforeweek5/code/uhead.h	/^	float avg;$/;"	m	struct:arg
+b	week8/code/pra2.c	/^static int b = 10;$/;"	v	file:
+bar	beforeweek5/code/work2_1.c	/^void bar(){$/;"	f
+before_main	week10/code/1-2.c	/^static void __attribute__ ((constructor)) before_main(){$/;"	f	file:
+before_main	week9/code/test.c	/^static void __attribute__ ((constructor)) before_main(void){$/;"	f	file:
+bubbleSort	beforeweek5/code/fun2.c	/^int* bubbleSort(int *a, int n){$/;"	f
+buf1	beforeweek5/code/lseek.c	/^char buf1[] = "abcdefghij";$/;"	v
+buf2	beforeweek5/code/lseek.c	/^char buf2[] = "ABCDEFGHIJ";$/;"	v
+callback1	week10/code/1-2.c	/^static void callback1(){$/;"	f	file:
+callback1	week9/code/test.c	/^static void callback1(){$/;"	f	file:
+callback2	week10/code/1-2.c	/^static void callback2(){$/;"	f	file:
+callback2	week9/code/test.c	/^static void callback2(){$/;"	f	file:
+callback3	week9/code/test.c	/^static void callback3(){$/;"	f	file:
+err_sys	beforeweek5/code/ourhdr.c	/^void err_sys(char *n){$/;"	f
+fd	beforeweek5/code/clone.c	/^int v,fd;$/;"	v
+foo	beforeweek5/code/work2_1.c	/^void foo(){$/;"	f
+fun1	week10/code/1-1.c	/^static void fun1(){$/;"	f	file:
+fun1	week9/code/jumptest.c	/^static void fun1(){$/;"	f	file:
+fun1	week9/code/jumptest2.c	/^static void fun1(int *a, int *b, int *c){$/;"	f	file:
+fun2	week9/code/jumptest.c	/^static void fun2(){$/;"	f	file:
+func	beforeweek5/code/clone.c	/^int func(){$/;"	f
+g	week10/code/1-4.c	/^static g = 9;$/;"	v	file:
+g	week10/code/1-5.c	/^int g = 10;$/;"	v
+g	week10/code/pro1.c	/^int g = 9999;$/;"	v
+g_stack_env	week9/code/jumptest.c	/^static jmp_buf g_stack_env;$/;"	v	file:
+g_stack_env	week9/code/jumptest2.c	/^static jmp_buf g_stack_env;$/;"	v	file:
+gg	week9/code/fork1.c	/^int gg = 9;$/;"	v
+global	week7/code/buftest2.c	/^     int global = 4;$/;"	v
+init_daemon	week11/code/init.c	/^void init_daemon(){$/;"	f
+main	beforeweek5/code/a.c	/^int main(){$/;"	f
+main	beforeweek5/code/aa.c	/^int main(){$/;"	f
+main	beforeweek5/code/clone.c	/^int main(){$/;"	f
+main	beforeweek5/code/copy1.c	/^int main(){$/;"	f
+main	beforeweek5/code/fork.c	/^int main(){$/;"	f
+main	beforeweek5/code/fun3.c	/^int main(){$/;"	f
+main	beforeweek5/code/lseek.c	/^int main(){$/;"	f
+main	beforeweek5/code/main.c	/^int main(){$/;"	f
+main	beforeweek5/code/open1.c	/^int main(){$/;"	f
+main	beforeweek5/code/open2.c	/^int main(){$/;"	f
+main	beforeweek5/code/print1.c	/^int main(int argc, char *argv[]){$/;"	f
+main	beforeweek5/code/time.c	/^int main(){$/;"	f
+main	beforeweek5/code/timedif.c	/^int main(){$/;"	f
+main	beforeweek5/code/vfork.c	/^ int main(){$/;"	f
+main	beforeweek5/code/work2_1.c	/^int main(int argc, char *argv[]){$/;"	f
+main	beforeweek5/code/work2_2.c	/^int main(){$/;"	f
+main	beforeweek5/code/work2_3.c	/^int main(){$/;"	f
+main	week10/code/1-1.c	/^int main(){$/;"	f
+main	week10/code/1-2.c	/^int main(){$/;"	f
+main	week10/code/1-4.c	/^int main(){$/;"	f
+main	week10/code/1-5.c	/^int main(){$/;"	f
+main	week10/code/pro1.c	/^int main(){$/;"	f
+main	week11/code/6-8.c	/^int main(){$/;"	f
+main	week11/code/share.c	/^int main(){$/;"	f
+main	week11/code/test1.c	/^int main(){$/;"	f
+main	week11/code/test2.c	/^int main(){$/;"	f
+main	week11/code/test3.c	/^int main(){$/;"	f
+main	week11/code/test4.c	/^int main(){$/;"	f
+main	week5/code/a.c	/^int main(){$/;"	f
+main	week6/code/aa.c	/^int main(){$/;"	f
+main	week6/code/rbtest/aa.c	/^int main(){$/;"	f
+main	week7/code/buftest1.c	/^int main(){$/;"	f
+main	week7/code/buftest2.c	/^     int main(){$/;"	f
+main	week7/code/file.c	/^int main(){$/;"	f
+main	week7/code/filedl.c	/^int main(){$/;"	f
+main	week8/code/main1.c	/^int main(int argc, char *argv[], char *env[]){$/;"	f
+main	week8/code/pra1.c	/^int main(){$/;"	f
+main	week8/code/pra2.c	/^int main(int argc, char *argv[], char *envp[]){$/;"	f
+main	week8/code/pra3.c	/^int main(){$/;"	f
+main	week8/code/pra4.c	/^int main(){$/;"	f
+main	week8/code/pra5.c	/^int main(){$/;"	f
+main	week9/code/fork1.c	/^int main(){$/;"	f
+main	week9/code/jumptest.c	/^int main(){$/;"	f
+main	week9/code/jumptest2.c	/^int main(){$/;"	f
+main	week9/code/memtest.c	/^int main(){$/;"	f
+main	week9/code/test.c	/^int main(){$/;"	f
+main	week9/code/test1.c	/^int main(int argc, char *argv[], char *engv[]){$/;"	f
+maxNum	beforeweek5/code/a2.c	/^void maxNum(int *arr){$/;"	f
+maxNum	week5/code/a2.c	/^void maxNum(int *arr){$/;"	f
+maxNum	week6/code/a2.c	/^void maxNum(int *arr){$/;"	f
+mem_double_free	week9/code/memtest.c	/^static void mem_double_free(){$/;"	f	file:
+mem_free_wild_pointer	week9/code/memtest.c	/^static void mem_free_wild_pointer(){$/;"	f	file:
+mem_leak1	week9/code/memtest.c	/^static void mem_leak1(){$/;"	f	file:
+mem_leak2	week9/code/memtest.c	/^static void mem_leak2(){$/;"	f	file:
+mem_overrun1	week9/code/memtest.c	/^static void mem_overrun1(){$/;"	f	file:
+mem_overrun2	week9/code/memtest.c	/^static void mem_overrun2(){$/;"	f	file:
+menu	week7/code/file.c	/^int menu(){$/;"	f
+menu	week7/code/filedl.c	/^int menu(){$/;"	f
+menu	week7/code/io.c	/^int menu(){$/;"	f
+newFile	week7/code/file.c	/^void newFile(){$/;"	f
+newFile	week7/code/filedl.c	/^void newFile(){$/;"	f
+newFile	week7/code/io.c	/^void newFile(){$/;"	f
+operator	beforeweek5/code/fun2.c	/^arg operator(int *a,int n){ 	\/\/count sum and avg of array and give them to a struct "k" and  return the struct "k"$/;"	f
+operator	beforeweek5/code/uhead.h	/^arg operator(int *,int);	\/\/count sum and avg of array and return$/;"	v
+pr_exit	week11/code/test4.c	/^void pr_exit(int s, pid_t pid){$/;"	f
+print	week8/code/pra1.c	/^void print(char *str, int p){$/;"	f
+randNum	beforeweek5/code/a1.c	/^void randNum(int *arr){$/;"	f
+randNum	week5/code/a1.c	/^void randNum(int *arr){$/;"	f
+randNum	week6/code/a1.c	/^void randNum(int *arr){$/;"	f
+readAuth	week7/code/file.c	/^void readAuth(){$/;"	f
+readAuth	week7/code/filedl.c	/^void readAuth(){$/;"	f
+readAuth	week7/code/io.c	/^void readAuth(){$/;"	f
+readFile	week7/code/file.c	/^void readFile(){$/;"	f
+readFile	week7/code/filedl.c	/^void readFile(){$/;"	f
+readFile	week7/code/io.c	/^void readFile(){$/;"	f
+show	week7/code/io.c	/^void show(){$/;"	f
+sub	week8/code/pra5.c	/^int sub(int a, int b, int c){$/;"	f
+sum	beforeweek5/code/uhead.h	/^	int sum;$/;"	m	struct:arg
+updateAuth	week7/code/file.c	/^void updateAuth(){$/;"	f
+updateAuth	week7/code/filedl.c	/^void updateAuth(){$/;"	f
+updateAuth	week7/code/io.c	/^void updateAuth(){$/;"	f
+urand	beforeweek5/code/fun.c	/^int urand(int n){$/;"	f
+usum	beforeweek5/code/fun.c	/^int usum(int *a, int n){	\/\/count sum of a array and return$/;"	f
+v	beforeweek5/code/clone.c	/^int v,fd;$/;"	v
+w	week11/code/test5.c	/^/;"	v
+writeFile	week7/code/file.c	/^void writeFile(){$/;"	f
+writeFile	week7/code/filedl.c	/^void writeFile(){$/;"	f
+writeFile	week7/code/io.c	/^void writeFile(){$/;"	f
+x	week9/code/test1.c	/^int x = 100;$/;"	v
+zero	week11/code/test4.c	/^int zero = 0;$/;"	v

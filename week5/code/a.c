@@ -6,3 +6,8 @@ int main(){
 	maxNum(arr);
 	return 0;
 }
+int me(){
+	int w;
+	return w;	
+	printf("%d\n",3);
+}

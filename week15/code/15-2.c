@@ -18,6 +18,7 @@ void *writer(void *param){
 	int i = (int)param;
 	while(1){
 		pthread_rwlock_wrlock(&rwlock);
+		share_cnt++;
 		fprintf(stderr,"writer  %d: share_cnt  = %d\n",i,share_cnt);
 		pthread_rwlock_unlock(&rwlock);
 		sleep(1);
@@ -30,7 +31,7 @@ int main(){
 	pthread_rwlock_t rwlock_attr;
 	pthread_rwlockattr_init(&rwlock_attr);
 	#ifdef WRITE_FIRST
-		pthread_relockattr_setkind_np(&rwlock_attr,PTHREAD_RWLOCK_PERFER_WRITER_NONRECURSIVE_UP);
+		pthread_rwlockattr_setkind_np(&rwlock_attr,PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP);
 	#endif
 	pthread_rwlock_init(&rwlock,&rwlock_attr);
 	int i = 0;
